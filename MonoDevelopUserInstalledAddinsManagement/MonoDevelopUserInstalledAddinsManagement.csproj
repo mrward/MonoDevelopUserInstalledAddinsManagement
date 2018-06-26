@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <RootNamespace>MonoDevelop.UserInstalledAddinsManagement</RootNamespace>
+    <AssemblyName>MonoDevelop.UserInstalledAddinsManagement</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="UserAddinManagerDialog.UI.cs">
+      <DependentUpon>UserAddinManagerDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

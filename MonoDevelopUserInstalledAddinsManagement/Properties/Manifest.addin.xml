@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Runtime>
+	</Runtime>
+
+	<Extension path="/MonoDevelop/Ide/Commands">
+		<Category id="MonoDevelop.UserInstalledAddinsManagement" _name="Manage User Extensions">
+			<Command
+				id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
+				_label="User Extensions..."
+				defaultHandler="MonoDevelop.UserInstalledAddinsManagement.OpenUserAddinManagerHandler" />
+		</Category>
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+		<Condition id="Platform" value="!mac">
+			<CommandItem
+				id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
+				insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager"
+				insertbefore="ToolsSection" />
+		</Condition>
+	</Extension>
+
+	<Extension path="/MonoDevelop/Ide/AppMenu">
+		<Condition id="Platform" value="mac">
+			<CommandItem
+				id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
+				insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager" />
+		</Condition>
+	</Extension>
+</ExtensionModel>
