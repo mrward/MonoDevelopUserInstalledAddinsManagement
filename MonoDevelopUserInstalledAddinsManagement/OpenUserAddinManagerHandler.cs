@@ -38,8 +38,7 @@ namespace MonoDevelop.UserInstalledAddinsManagement
 		{
 			try {
 				var dialog = new UserAddinManagerDialog ();
-				WindowFrame parent = Toolkit.CurrentEngine.WrapWindow (IdeApp.Workbench.RootWindow);
-				dialog.Run (parent);
+				dialog.Run (IdeServices.DesktopService.GetFocusedTopLevelWindow ());
 			} catch (Exception ex) {
 				LoggingService.LogError ("OpenUserAddinManagerHandler.Run error", ex);
 			}

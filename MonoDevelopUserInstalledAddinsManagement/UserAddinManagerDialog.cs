@@ -52,6 +52,8 @@ namespace MonoDevelop.UserInstalledAddinsManagement
 			enableAllButton.Clicked += EnableAllButtonClicked;
 
 			addinsListView.SelectionChanged += AddinsListViewSelectionChanged;
+
+			UpdateButtonsState ();
 		}
 
 		void GetUserAddins ()

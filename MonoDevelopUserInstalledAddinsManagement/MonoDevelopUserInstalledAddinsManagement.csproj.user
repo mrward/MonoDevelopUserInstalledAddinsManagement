@@ -2,11 +2,12 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <StartAction>Program</StartAction>
-    <StartProgram>..\..\monodevelop-8.0\main\build\bin\VisualStudio.exe</StartProgram>
-    <StartWorkingDirectory>..\..\monodevelop-8.0\main\build\bin</StartWorkingDirectory>
+    <StartProgram>\Applications\Visual Studio %28Preview%29.app\Contents\MacOS\VisualStudio</StartProgram>
+    <StartArguments>-no-redirect</StartArguments>
+    <ExternalConsole>true</ExternalConsole>
     <ConsolePause>false</ConsolePause>
     <EnvironmentVariables>
-      <Variable name="MONODEVELOP_DEV_ADDINS" value="${TargetDir}" />
+      <Variable name="MONODEVELOP_DEV_ADDINS" value="${TargetDir}" xmlns="" />
     </EnvironmentVariables>
   </PropertyGroup>
 </Project>

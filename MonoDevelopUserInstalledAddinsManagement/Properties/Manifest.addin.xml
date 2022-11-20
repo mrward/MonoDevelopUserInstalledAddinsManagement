@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ExtensionModel>
+﻿<ExtensionModel>
 	<Runtime>
+		<Import assembly="MonoDevelop.UserInstalledAddinsManagement.dll" />
 	</Runtime>
 
 	<Extension path="/MonoDevelop/Ide/Commands">
@@ -13,19 +13,15 @@
 	</Extension>
 
 	<Extension path="/MonoDevelop/Ide/MainMenu/Tools">
-		<Condition id="Platform" value="!mac">
-			<CommandItem
-				id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
-				insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager"
-				insertbefore="ToolsSection" />
-		</Condition>
+		<CommandItem
+			id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
+			insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager"
+			insertbefore="ToolsSection" />
 	</Extension>
 
 	<Extension path="/MonoDevelop/Ide/AppMenu">
-		<Condition id="Platform" value="mac">
-			<CommandItem
-				id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
-				insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager" />
-		</Condition>
+		<CommandItem
+			id="MonoDevelop.UserInstalledAddinsManagement.UserAddinManager"
+			insertafter="MonoDevelop.Ide.Commands.ToolCommands.AddinManager" />
 	</Extension>
 </ExtensionModel>

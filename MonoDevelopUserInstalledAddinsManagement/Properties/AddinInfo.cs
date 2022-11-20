@@ -9,5 +9,5 @@ using Mono.Addins.Description;
 
 [assembly:AddinName ("User Installed Extensions Management")]
 [assembly:AddinDescription ("Manages user installed extensions")]
-[assembly: AddinDependency ("Core", "8.0")]
-[assembly: AddinDependency ("Ide", "8.0")]
+[assembly: AddinDependency ("Core", "17.5")]
+[assembly: AddinDependency ("Ide", "17.5")]
