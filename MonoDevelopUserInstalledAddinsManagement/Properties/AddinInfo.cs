@@ -4,7 +4,7 @@ using Mono.Addins.Description;
 [assembly:Addin (
 	"UserInstalledAddinsManagement",
 	Namespace = "MonoDevelop",
-	Version = "0.1",
+	Version = "0.2",
 	Category = "IDE extensions")]
 
 [assembly:AddinName ("User Installed Extensions Management")]
